@@ -5,7 +5,8 @@ const leaders = [
     name: 'Joe Biden',
     country: 'United States of America',
     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/800px-Joe_Biden_presidential_portrait.jpg',
-    text: 'The president of the United States  is the head of state and head of government of the United States of America. The president directs the executive branch of the federal government and is the commander-in-chief of the United States Armed Forces.'
+    text: 'The president of the United States  is the head of state and head of government of the United States of America. The president directs the executive branch of the federal government and is the commander-in-chief of the United States Armed Forces.',
+    // flag : "&#127462 &#127467",
   },
   {
     id: 2,
@@ -57,6 +58,8 @@ const img = document.getElementById('person-img');
 const president = document.getElementById('president');
 const country = document.getElementById('country');
 const info = document.getElementById('info');
+// const after = document.querySelector(".image-container::after");
+// const after = document.querySelector(".image-container");
 
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -72,6 +75,7 @@ window.addEventListener('DOMContentLoaded', function () {   // Sayfa yuklendigin
   president.textContent = item.name;
   country.textContent = item.country;
   info.textContent = item.text;
+  
 });
 
 // The informations of the relevant object will be shown
